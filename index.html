@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/*master.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, ">
+  <title>To-Do List</title>
+</head>
+<body>
+  <!-- <div id="nav">
+  </div>
+  <script>$(function(){$("#nav").load("html/nav.html");});</script> -->
+
+  <div class="section-container">
+    <!-- <a class="back-projects" href="https://www.trevorpahigian.com/projects.html">
+    <i class="fa fa-angle-left"></i>
+    <p>
+      View all projects
+    </p>
+    </a> -->
+    <p class="section-title">
+      Task Manager
+    </p>
+    <p class="section-text">
+      Enter and track completion of daily tasks below.
+    </p>
+
+  <div class="task-container">
+    <form class="task-form">
+      <input type="text" class="task-input" placeholder="Add a task here...">
+      </form>
+      <ul class="task-items"></ul>
+        <div>
+          <div class="task-empty-space">
+            <i class="fa fa-list"></i>
+            <p class='no-task-txt'>There are no tasks to display.</p>
+            <p class="no-task-txt">Click above to add new items.</p>
+            </div>
+          </div>
+        <div class="progress-container">
+          <div id="progress-status-container">
+            <p class="status-text">Tasks Completed:</p>
+            <p class="status-text" id="count-completed-tasks">0</p>
+            <p class="status-text">/</p>
+            <p class="status-text" id="count-total-tasks">0</p>
+            </div>
+          <div id="progress-bar">
+            <div id="progress-bar-full">
+              </div>     
+            </div>
+            <div id ="complete-container-pulse">
+              <p id="complete-container-message">Tasks complete! Add some more!</p>
+            </div>
+          </div>
+
+    </div>
+  </div>
+<script type="text/javascript" src="js/task.js"></script>
+<script type="text/javascript" src="js/task_progress.js"></script>
+<script type="text/javascript" src="js/task_complete.js"></script>
+<!-- <script type="text/javascript" src="js/nav.js"></script> -->
+
+</body>
+</html>

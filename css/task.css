@@ -1,0 +1,248 @@
+@import "root.css";
+.task-container {
+  background: var(--nav-bar-bkg);
+  height: 650px;
+  max-width: 900px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  border-radius: 20px;
+  padding: 10px 0px;
+  position: relative;
+}
+.task-form {
+  margin: 0px;
+}
+.task-input {
+  width: 35%;
+  transition: width .75s ease-in-out;
+  margin-top: 10px;
+  font-size: 12px;
+  margin-bottom: 20px;
+  /* margin-left: 2%; */
+  color:var(--new-font-color);
+  background: rgb(97, 97, 97, .150);
+  height: 20px;
+  padding: 4px 6px 6px 6px;
+  border: none;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  transition: 0.6s;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.task-input:focus {
+  outline:0;
+  background: rgba(117, 141, 139, 0.253);
+  border: 2px solid rgb(15, 231, 203, 0.753);
+  width: 94%;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.task-input:hover {
+  outline:0;
+  transition: 1s;
+  border: 2px solid rgb(15, 231, 203, 0.753);
+}
+
+.task-input::placeholder {
+  color:#777;
+  font-size: 14px;
+  padding: 0px 0px 0px 5px;
+}
+
+.task-input:focus::placeholder {
+  color:#777;
+  font-size: 14px;
+}
+
+.task-items li {
+  cursor: default;
+  position: relative;
+  list-style-type: none;
+  border-radius: 16px;
+  margin: 0px 6px 9px 6px;
+  background: rgba(51, 51, 51, 0.519);
+  word-wrap: break-word;
+  word-break: break-all;
+  transition: 0.2s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ddd;
+  padding: 15px 45px 15px 48px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+    .task-items li:nth-child(odd) {
+      background: rgba(68, 68, 68, 0.521);
+    }
+
+    .task-items li:hover {
+      background: rgba(85, 85, 85, 0.575);
+      font-size: 16px;
+      color: #fff;
+    }
+
+    .task-items li.checked {
+      background: rgba(29, 153, 136, 0.541);
+      color: #ccc;
+    }
+
+    .task-items li.checked:hover {
+      background: rgb(48, 105, 91);
+    }
+
+.task-items {
+  background: transparent;
+  padding: 0px;
+  width: 95%;
+  /* margin-left: auto;
+  margin-right: auto; */
+  list-style-type: none; 
+  height: 490px; 
+  overflow:scroll;
+}
+
+.item {
+  padding: 14px;
+  margin: 0px 8px 8px 8px;
+  word-break: keep-all;
+  font-size: 15px;
+}
+.list_item_text {
+  display: inline-block;
+  cursor: default;
+  width: 95%;
+  margin-left: 1%;
+  color: var(--new-font-color);
+  overflow-wrap: normal;
+}
+
+.checkbox {
+  width: 8%;
+  margin-left: -1%;
+  margin-top:-3%;
+  margin-right: 0%;
+  margin-bottom: 0%;
+  cursor: pointer;
+  height: 40px;
+  float: left;
+}
+
+.checkbox:checked + .list_item_text  { 
+  text-decoration: line-through;
+}
+
+.item:checked{
+  cursor: crosshair;
+}
+
+[contenteditable] {
+  outline: 0px solid transparent;
+}
+  
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  margin-top: -5px;
+  height: 26px;
+  width: 26px;
+  box-shadow: 0px 2px 3px 2px #000;
+  border-radius: 18px;
+  transition: all 0.15s ease-out 0s;
+  background: rgba(68, 68, 68, 0.623);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  z-index: 1000;
+  margin-left: -38px;
+}
+
+.option-input:checked {
+  background: #1c9e91d2;
+  box-shadow: 0px 2px 3px 2px #125851d2;
+}
+
+.option-input:checked::before {
+  height: 26px;
+  width: 26px;
+  position: relative;
+  content: '✔';
+  display: inline-block; 
+  border-radius: 18px;
+  font-size: 16.66667px;
+  text-align: center;
+  line-height: 28px;
+}
+
+.option-input.radio {
+  border-radius: 50%;
+}
+
+.option-input.radio::after {
+  border-radius: 50%;
+}
+
+.option-input.checkbox:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px #888;
+}
+
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top:10px;
+  font-weight: 300;
+  right: 16px;
+  z-index: 3;
+  font-size: 20px;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+  
+.task-empty-space {
+  margin-left: auto;
+  width: 100%;
+  margin-right: auto;
+  margin-top: -350px;
+  color: #888;
+  float: left;
+  text-align: center;
+}
+
+.no-task-txt {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin:4px;
+}
+
+.fa.fa-list::before {
+  font-size: 112px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #444;
+  width: 100%;
+  display: contents;
+}
+
+@media only screen and (max-device-width: 800px) { 
+
+input.task-input,input.task-input:focus, 
+input.task-input::placeholder,.task-input:focus::placeholder,
+.task-input:focus{
+  width: 93%;}}
