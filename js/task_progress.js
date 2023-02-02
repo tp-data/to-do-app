@@ -1,5 +1,5 @@
 // count checked and total checkboxes on page load.
-function myFunction2() {
+function taskProgress() {
   $('#count-completed-tasks').text($(".checkbox:checked").length);
   $('#count-total-tasks').text($(".checkbox").length);
   const progressBar = document.getElementById('progress-bar-full');
@@ -22,7 +22,7 @@ function myFunction2() {
 $(function () {
     $('.checkbox, .close').on('click', function() {
 
-      myFunction2(); 
+      taskProgress(); 
 
     }).triggerHandler("click"); 
   });
@@ -30,7 +30,7 @@ $(function () {
   // Update count of checked and total checkboxes on checkbox click
   $(function () {
     $(document).delegate('.checkbox, .close', 'click', function() {
-      myFunction2(); 
+      taskProgress(); 
 
     }).triggerHandler("click"); 
   });
@@ -38,6 +38,6 @@ $(function () {
   // Update count of checked and total checkboxes on input submission 
   $(function () {
     $('.task-form').submit(function() {
-      myFunction2(); 
+      taskProgress(); 
     }).triggerHandler("click"); 
   });  
