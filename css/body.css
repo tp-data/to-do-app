@@ -5,7 +5,6 @@ body {
 	font-size:var(--font-size-medium);
 	color: var(--font-color);
     margin: 0;
-	/* max-width:1200px; */
 	background-color:var(--second-bkg);
 }
 
@@ -97,28 +96,6 @@ body {
 
 /* ------------------------------------------ */
 
-/* @media screen and (min-width:1500px) {
-	.section-container{
-		padding-left: var(--space-large-xxx);
-		padding-right: var(--space-large-xxx);
-	}
-	.top-nav-bar{
-		padding-left: var(--space-large-xx);
-		padding-right: var(--space-large-xx);
-	}
-
-} */
-/* @media screen and (min-width:1300px) {
-	.section-container{
-		padding-left: var(--space-large-x);
-		padding-right: var(--space-large-x);
-	}
-	.top-nav-bar{
-		padding-left: var(--space-large);
-		padding-right: var(--space-large);
-	}
-
-} */
 @media screen and (max-width:980px) {
 	.section-container{
 		padding: var(--space-medium);
@@ -176,21 +153,3 @@ body {
 		padding-top: var(--space-large-xx) !important;
 	}
 }
-
-
-
-
-
-/* .back-projects {
-    display: inline-flex;
-    gap: 15px;
-    margin-bottom: var(--space-small);
-    color: var(--font-color);
-}
-.back-projects:hover {
-    color: var(--highlight-color);
-}
-.back-projects i {
-    font-size: 22px;
-    font-weight: 100;
-} */
